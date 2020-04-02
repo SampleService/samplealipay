@@ -31,7 +31,7 @@ public class MainController {
 
     @PostMapping(path = "/life")
     @ResponseBody
-    @MFuncDescription(value = "pay", level = 2)
+    @MFuncDescription(value = "life", level = 2)
     public MResponse life(@RequestBody MResponse params, HttpServletRequest request) {
 
         boolean r = MBaseUtils.verDepRequest("weather", 20, request, logger);
