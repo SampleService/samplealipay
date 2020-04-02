@@ -1,5 +1,6 @@
 package com.septemberhx.alipay.controller;
 
+import com.septemberhx.alipay.utils.MBaseUtils;
 import com.septemberhx.common.bean.MResponse;
 import com.septemberhx.mclient.annotation.MFuncDescription;
 import org.springframework.stereotype.Controller;
@@ -21,6 +22,6 @@ public class MainController {
     @ResponseBody
     @MFuncDescription(value = "pay", level = 3)
     public MResponse pay(@RequestBody MResponse params, HttpServletRequest request) {
-        return MResponse.successResponse();
+        return MBaseUtils.generateResInKBSize(5);
     }
 }
