@@ -20,8 +20,8 @@ public class MainController {
 
     @PostMapping(path = "/pay")
     @ResponseBody
-    @MFuncDescription(value = "pay", level = 3)
+    @MFuncDescription(value = "pay", level = 2)
     public MResponse pay(@RequestBody MResponse params, HttpServletRequest request) {
-        return MBaseUtils.generateResInKBSize(5);
+        return MBaseUtils.generateResInKBSize(8);
     }
 }
